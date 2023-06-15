@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 int findbig(int a, int b) {
-    return (a > b) ? a : b;
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
 }
 
 int main() {
@@ -11,7 +15,7 @@ int main() {
 
     int result= findbig(a,b);
 
-    printf("biggest number: %d\n", result);
+    printf("biggest number:%d\n", result);
 
     return 0;
 }
